@@ -1,0 +1,21 @@
+{
+    "name": "karlis/common-module",
+    "version": "1.0.0",
+    "description": "A common module with helper methods used by module1 and module2",
+    "type": "module",
+    "autoload": {
+        "psr-4": {
+            "CommonModule\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "KarlisJ",
+            "email": "karlis.juskovs@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "nesbot/carbon": "^2.0"
+    }
+}

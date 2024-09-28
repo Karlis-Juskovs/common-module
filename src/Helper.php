@@ -6,10 +6,8 @@ use Carbon\Carbon;
 
 class Helper
 {
-    public static function formatDate(string $date): string
+    public static function formatDate(Carbon $date): string
     {
-        $date = Carbon::parse($date);
-
         if ($date->isToday()) {
             return 'today ' . $date->format('H:i');
         }
